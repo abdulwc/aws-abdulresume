@@ -5,12 +5,12 @@ Created and deployed a cloud-hosted resume at a live URL using AWS.
 
 Services Used:
     Amazon S3
-    Amazon Cloudfront
-    Amazon Certficate Manager
+    Amazon CloudFront
+    Amazon Certificate Manager
     Lambda
-    Dyanamo DB
+    Dynamo DB
     Route 53
-    Github Actions
+    GitHub Actions
 
 Steps involved; 
-Resume written in HTML, styled with basic CSS, deployed using Amazon S3, used Amazon CloudFront to have the s3 website URL use HTTPS for security and used Amazon Route 53 to point a custom DNS domain name to the CloudFront Distribution. Using Dynamo DB, Lambda and JavaScript added a visitor counter that displays how many people have viewed the site. Implemented a CI/CD pipeline using GitHub Actions to automate the deployment of the wesite to my Amazon S3 bucket. 
+Resume written in HTML, styled with basic CSS, deployed using Amazon S3, used Amazon CloudFront to have the s3 website URL use HTTPS for security and used Amazon Route 53 to point a custom DNS domain name to the CloudFront Distribution. Using Dynamo DB, Lambda and JavaScript added a visitor counter that displays how many people have viewed the site. Implemented a CI/CD pipeline using GitHub Actions to automate the deployment of the website to my Amazon S3 bucket. 
