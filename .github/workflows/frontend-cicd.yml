@@ -22,7 +22,6 @@ jobs:
         role-to-assume: arn:aws:iam::${{ secrets.AWS_A_N }}:role/crc-cicd
         aws-region: us-east-1
         audience: https://token.actions.githubusercontent.com
-        oidc-issuer: https://token.actions.githubusercontent.com
     - name: Copy files to the test website with the AWS CLI
       run: |
         aws s3 sync . s3://achanna-crc
