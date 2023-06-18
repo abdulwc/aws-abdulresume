@@ -21,7 +21,7 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::${{ secrets.AWS_A_N }}:role/crc-cicd
         aws-region: us-east-1
-        oidc-provider: arn:aws:iam::${{ secrets.AWS_A_N }}:oidc-provider/token.actions.githubusercontent.com
+        audience: https://token.actions.githubusercontent.com
         oidc-issuer: https://token.actions.githubusercontent.com
     - name: Copy files to the test website with the AWS CLI
       run: |
