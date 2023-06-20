@@ -1,7 +1,7 @@
 <h1>AWS Cloud Resume </h1>
 Created and deployed a cloud-hosted resume at a live URL using AWS.<br />
 
-<br /> <a href="(https://resume.awchanna.com)" > My Cloud Resume</a>
+<br /> <a href="(https://resume.awchanna.com)">My Cloud Resume</a>
 <br />
  
 <h2>Services Used</h2>
