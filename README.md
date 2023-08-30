@@ -11,7 +11,7 @@ Welcome to my AWS Cloud Resume project! This repository showcases a cloud-hosted
 
 <h2>Key Highlights</h2>
 
-Cloud-hosted Resume: My resume is accessible at <a href="https://resume.awchanna.com">resume.awchanna.com – a live URL powered by AWS services.
+Cloud-hosted Resume: My resume is accessible at <a href="https://resume.awchanna.com">resume.awchanna.com </a>– a live URL powered by AWS services.
 Custom Domain: I've used Amazon Route 53 to associate my resume with a custom domain name for a professional touch.
 Visitor Counter: I've integrated a visitor counter using DynamoDB, Lambda, and JavaScript to display the number of visitors who have viewed my resume.
 CI/CD Pipeline: The GitHub Actions workflow automates the deployment process, ensuring that updates to my resume are seamlessly reflected on the live site.
