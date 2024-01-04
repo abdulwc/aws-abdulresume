@@ -24,6 +24,20 @@ header {
     gap: 20px;
 }
 
+/* Adjusting color for text and links in header */
+header div, header div h1, header div p {
+    color: #ffffff; /* Making the text white for better visibility */
+}
+
+header a {
+    color: #ffcc00; /* Bright yellow for links */
+    text-decoration: underline; /* Underline to indicate it's clickable */
+}
+
+header a:hover {
+    color: #ffd700; /* Slightly darker yellow for hover state */
+}
+
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -89,6 +103,18 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Scroll Animation Styles */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
@@ -124,23 +150,4 @@ body:before {
     background: #0a4d8c;
     clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
     box-sizing: border-box;
-}
-
-/* Scroll Animation Styles */
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ... [rest of the existing styles] ... */
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* ... [existing responsive styles] ... */
 }
