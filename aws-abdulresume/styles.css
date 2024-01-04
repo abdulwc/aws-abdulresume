@@ -151,3 +151,26 @@ body:before {
     clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
     box-sizing: border-box;
 }
+/* Project Section Styles */
+#projects {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+#tryhackme-badge {
+    margin-top: 10px;
+}
+
+/* Adjust the TryHackMe badge size if needed */
+#tryhackme-badge iframe {
+    width: 100%;
+    max-width: 300px; /* Adjust this value as per your layout needs */
+    height: auto;
+}
