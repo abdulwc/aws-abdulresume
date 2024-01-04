@@ -1,8 +1,12 @@
-// JavaScript Code for Visitor Counter
+// JavaScript Code for Enhanced Resume Website Interactivity
+
+// Document Ready Function
 document.addEventListener('DOMContentLoaded', (event) => {
     updateCounter();
+    initializeScrollEffects();
 });
 
+// Function to Update Visitor Counter
 async function updateCounter() {
     const counter = document.querySelector(".counter-number");
     const url = "https://jwrxjcxgqkb7abdpenbyk4nrau0mfvwf.lambda-url.us-east-1.on.aws/";
@@ -19,3 +23,34 @@ async function updateCounter() {
         counter.innerHTML = 'Counter unavailable';
     }
 }
+
+// Function to Initialize Scroll Effects
+function initializeScrollEffects() {
+    window.addEventListener('scroll', () => {
+        animateOnScroll();
+    });
+}
+
+// Function to Animate Elements on Scroll
+function animateOnScroll() {
+    const sections = document.querySelectorAll('section');
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    sections.forEach(section => {
+        const sectionPosition = section.offsetTop + section.offsetHeight / 4;
+        if (scrollPosition >= sectionPosition) {
+            section.classList.add('fade-in');
+        }
+    });
+}
+
+// Add CSS Class for Scroll Animation in Stylesheet
+// .fade-in { 
+//     opacity: 1; 
+//     transform: translateY(0); 
+//     transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+// }
+// section { 
+//     opacity: 0; 
+//     transform: translateY(20px); 
+// }

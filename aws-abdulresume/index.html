@@ -3,26 +3,27 @@
 <head>
     <title>Abdul Channa - Resume</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="crcprofilepic.jpg" alt="Abdul Channa Profile Picture" class="profile-pic">
-        <h1>Abdul Channa</h1>
-        <p>(647) 767-1304 | <a href="mailto:abdul.channa44@gmail.com">abdul.channa44@gmail.com</a> | Canada, ON (Willing to relocate)</p>
+        <div class="header-content">
+            <img src="crcprofilepic.jpg" alt="Abdul Channa Profile Picture" class="profile-pic">
+            <div>
+                <h1>Abdul Channa</h1>
+                <p>(647) 767-1304 | <a href="mailto:abdul.channa44@gmail.com">abdul.channa44@gmail.com</a> | Canada, ON (Willing to relocate)</p>
+            </div>
+        </div>
     </header>
 
-    <hr>
-
     <main>
-        <section>
+        <section id="profile">
             <h2>Professional Profile</h2>
             <p>Experienced in construction and retail settings, fostering exceptional customer service, interpersonal abilities, and effective communication across multidisciplinary teams. Backed by a versatile skill set, I am ready to contribute effectively and bring value to diverse work environments.</p>
         </section>
 
-        <hr>
-
-        <section>
+        <section id="certifications">
             <h2>Certifications</h2>
             <ul class="Certifications">
                 <li>CompTIA A+</li>
@@ -33,11 +34,9 @@
             </ul>
         </section>
 
-        <hr>
-
-        <section>
+        <section id="experience">
             <h2>Work Experiences</h2>
-            <div>
+            <div class="experience-item">
                 <h3>Summer Technical Service Coordinator - CRH Canada | Toronto, ON</h3>
                 <p>May 2022 – September 2022</p>
                 <ul>
@@ -45,7 +44,7 @@
                     <li>Managed laboratory inventory, ensuring optimal levels of consumables and employing efficient record-keeping for all test data.</li>
                 </ul>
             </div>
-            <div>
+            <div class="experience-item">
                 <h3>Tunnel Construction Intern - Jay Dee Contractors | Toronto, ON</h3>
                 <p>January 2020 – August 2021</p>
                 <ul>
@@ -55,11 +54,9 @@
             </div>
         </section>
 
-        <hr>
-
-        <section>
+        <section id="education">
             <h2>Education</h2>
-            <div>
+            <div class="education-item">
                 <h3>Bachelor of Science in Information Technology</h3>
                 <p>Western Governors University | Salt Lake City, UT</p>
                 <p>Graduated: December 2023</p>
@@ -70,8 +67,6 @@
             </div>
         </section>
     </main>
-
-    <hr>
 
     <footer>
         <p>Views: <span class="counter-number">Couldn't read the counter</span></p>
