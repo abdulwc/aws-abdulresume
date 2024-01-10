@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     updateCounter();
     initializeScrollEffects();
+    immediatelyShowContent();
 });
 
 // Function to Update Visitor Counter
@@ -31,6 +32,7 @@ function initializeScrollEffects() {
     });
 }
 
+
 // Function to Animate Elements on Scroll
 function animateOnScroll() {
     const sections = document.querySelectorAll('section');
@@ -41,6 +43,14 @@ function animateOnScroll() {
         if (scrollPosition >= sectionPosition) {
             section.classList.add('fade-in');
         }
+    });
+}
+
+// New function to immediately display content on page load
+function immediatelyShowContent() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.classList.add('fade-in');
     });
 }
 
