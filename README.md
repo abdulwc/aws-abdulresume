@@ -5,6 +5,9 @@
 
 Welcome to my AWS Cloud Resume project! This repository showcases a cloud-hosted resume that I've built using Amazon Web Services (AWS). By utilizing various AWS services, I've created an online resume that's engaging, secure, and designed for a seamless experience. <br />
 
+<h2>Architecture</h2>
+
+![Architecture Diagram](img/aws-cloudresume-architecture.png)
 
 <h2>Key Highlights</h2>
 
